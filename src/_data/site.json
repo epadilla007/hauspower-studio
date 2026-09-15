@@ -1,7 +1,7 @@
 {
   "name": "HausPower",
   "url": "https://hauspower.ca",
-  "cssVersion": 1,
+  "cssVersion": 2,
   "phone": "(519) 635-2078",
   "phoneHref": "+15196352078",
   "email": "hello@hauspower.ca",
@@ -9,7 +9,12 @@
   "licence": "ECRA #7018055, Ontario",
   "city": "Kitchener-Waterloo",
   "region": "ON",
-  "areas": ["Kitchener-Waterloo", "Toronto and the GTA", "Muskoka", "Ontario"],
+  "areas": [
+    "Kitchener-Waterloo",
+    "Toronto and the GTA",
+    "Muskoka",
+    "Ontario"
+  ],
   "instagram": "https://www.instagram.com/smarthaus.ca/",
   "instagramHandle": "@smarthaus.ca",
   "web3formsKey": "YOUR_WEB3FORMS_ACCESS_KEY"

@@ -29,8 +29,8 @@
 
   /* Hero: word entrance on load */
   var words = document.querySelectorAll('.hero-word');
-  var heroTl = gsap.timeline({ delay: 0.15 });
-  heroTl.to(words, { opacity: 1, y: 0, duration: 1.1, stagger: 0.07, ease: 'expo.out' })
+  var heroTl = gsap.timeline({ delay: 0 });
+  heroTl.to(words, { opacity: 1, y: 0, duration: 0.9, stagger: 0.06, ease: 'expo.out' })
         .from('.hero-media img', { scale: 1.12, duration: 2.2, ease: 'power2.out' }, 0);
 
   /* Hero: scroll recede (scrubbed) */
@@ -61,9 +61,11 @@
       }
     });
     var ws = mText.querySelectorAll('.w');
-    gsap.set(ws, { opacity: 0.15 });
+    /* Colour tween (dim #7C8288 to ivory) keeps every state above WCAG AA. */
+    gsap.set(ws, { color: '#7C8288' });
     gsap.to(ws, {
-      opacity: 1, stagger: 0.08, ease: 'none',
+      color: function (i, el) { return el.classList.contains('accent') ? '#F0443F' : '#EDEBE6'; },
+      stagger: 0.08, ease: 'none',
       scrollTrigger: { trigger: mText, start: 'top 80%', end: 'bottom 45%', scrub: 1 }
     });
   }
