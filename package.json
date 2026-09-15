@@ -4,9 +4,9 @@
   "private": true,
   "description": "HausPower website, Studio revamp (11ty + Tailwind + GSAP)",
   "scripts": {
-    "build:css": "tailwindcss -c tailwind.config.cjs -i tailwind/input.css -o _site/css/tw.css --minify",
-    "build": "eleventy && npm run build:css",
-    "start": "eleventy --serve"
+    "build:css": "tailwindcss -c tailwind.config.cjs -i tailwind/input.css -o src/_includes/generated/tw.css --minify",
+    "build": "npm run build:css && eleventy",
+    "start": "npm run build:css && eleventy --serve"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.5",

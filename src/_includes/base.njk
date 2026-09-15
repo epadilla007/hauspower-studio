@@ -35,10 +35,11 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=Outfit:wght@300;400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=Outfit:wght@300;400;500&display=swap"></noscript>
   {% if preloadImage %}<link rel="preload" as="image" href="{{ preloadImage }}"{% if preloadImageMobile %} imagesrcset="{{ preloadImageMobile }} 900w, {{ preloadImage }} 1920w" imagesizes="100vw"{% endif %} fetchpriority="high">{% endif %}
-  <link rel="stylesheet" href="/css/tw.css?v={{ site.cssVersion }}">
+  <style>{% include "generated/tw.css" %}</style>
   <link rel="stylesheet" href="/css/style.css?v={{ site.cssVersion }}">
   <script type="application/ld+json">
   {

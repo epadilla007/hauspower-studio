@@ -13,7 +13,7 @@ Quiet luxury trust. The electrician the best designers and builders call without
 | `--line` | #2A2F34 | Hairline rules and borders |
 | `--ivory` | #EDEBE6 | Primary text on dark |
 | `--mist` | #A9AFB4 | Body text on dark |
-| `--dim` | #7C8288 | Labels and metadata on dark |
+| `--dim` | #8A9096 | Labels and metadata on dark |
 | `--red` | #D72327 | HausPower red. Buttons, indicator dot, brand mark. Used sparingly |
 | `--red-deep` | #B81C20 | Button hover, red text on bone |
 | `--red-text` | #F0443F | Small red text on dark (passes AA) |
@@ -26,7 +26,8 @@ Quiet luxury trust. The electrician the best designers and builders call without
 | ivory #EDEBE6 / ink #0B0D0F | 16.3:1 | Headings, body |
 | mist #A9AFB4 / ink #0B0D0F | 8.8:1 | Body copy |
 | mist #A9AFB4 / graphite #14181B | 8.1:1 | Card copy |
-| dim #7C8288 / ink #0B0D0F | 5.0:1 | Mono labels |
+| dim #8A9096 / ink #0B0D0F | 6.0:1 | Mono labels |
+| dim #8A9096 / graphite-2 #1B2024 | 5.1:1 | Labels on cards |
 | red-text #F0443F / ink #0B0D0F | 5.2:1 | Small red labels |
 | white / red #D72327 | 5.1:1 | Primary button |
 | white / red-deep #B81C20 | 6.5:1 | Button hover |

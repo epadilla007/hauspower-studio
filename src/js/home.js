@@ -28,10 +28,8 @@
   var mm = gsap.matchMedia();
 
   /* Hero: word entrance on load */
-  var words = document.querySelectorAll('.hero-word');
-  var heroTl = gsap.timeline({ delay: 0 });
-  heroTl.to(words, { opacity: 1, y: 0, duration: 0.9, stagger: 0.06, ease: 'expo.out' })
-        .from('.hero-media img', { scale: 1.12, duration: 2.2, ease: 'power2.out' }, 0);
+  /* Headline words animate in pure CSS (no wait for GSAP); the image settles here. */
+  gsap.from('.hero-media img', { scale: 1.08, duration: 2.2, ease: 'power2.out' });
 
   /* Hero: scroll recede (scrubbed) */
   gsap.to('.hero-media img', {
@@ -61,8 +59,8 @@
       }
     });
     var ws = mText.querySelectorAll('.w');
-    /* Colour tween (dim #7C8288 to ivory) keeps every state above WCAG AA. */
-    gsap.set(ws, { color: '#7C8288' });
+    /* Colour tween (dim #8A9096 to ivory) keeps every state above WCAG AA. */
+    gsap.set(ws, { color: '#8A9096' });
     gsap.to(ws, {
       color: function (i, el) { return el.classList.contains('accent') ? '#F0443F' : '#EDEBE6'; },
       stagger: 0.08, ease: 'none',
