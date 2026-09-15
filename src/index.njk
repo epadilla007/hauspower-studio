@@ -1,0 +1,246 @@
+---
+layout: base.njk
+permalink: /index.html
+canonicalPath: /
+title: "HausPower | Luxury Residential Electrician & Smart Home, Kitchener, Toronto, Muskoka"
+ogTitle: "HausPower. Powering Ontario's finest homes."
+description: "Licensed master electrician for luxury homes in Kitchener-Waterloo, Toronto, the GTA and Muskoka. Custom home electrical, smart home integration, lighting control and panel upgrades. ECRA #7018055."
+bodyClass: page-home
+pageScript: home.js
+preloadImage: /images/hero-night.jpg
+preloadImageMobile: /images/hero-night-m.jpg
+---
+{%- set star %}<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6L2.5 9.4l6.6-.8z"/></svg>{% endset -%}
+
+<!-- Beat 1: Who are you? -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-media">
+    <img src="/images/hero-night.jpg" srcset="/images/hero-night-m.jpg 900w, /images/hero-night.jpg 1920w" sizes="100vw" alt="Modern custom home with architectural lighting at night" width="1920" height="1280" fetchpriority="high" decoding="async">
+  </div>
+  <div class="wrap hero-inner">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="label"><span class="dot" aria-hidden="true"></span>Licensed Master Electrician. Ontario.</p>
+        <h1 id="hero-title" class="display-1">
+          <span class="hero-word">Powering</span> <span class="hero-word">Ontario's</span> <span class="hero-word">finest</span> <span class="hero-word">homes.</span>
+        </h1>
+        <p class="lede">Electrical and smart home work for custom builds and serious renovations in Kitchener-Waterloo, Toronto, the GTA and Muskoka.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="/request-a-quote">Request a quote <span class="arrow" aria-hidden="true">&rarr;</span></a>
+          <a class="btn btn-ghost" href="tel:{{ site.phoneHref }}">Talk to Matt</a>
+        </div>
+      </div>
+      <aside class="hero-side" aria-label="Licence">
+        <div class="credential">
+          <img src="/images/ecra-esa-badge.png" alt="ECRA of the Electrical Safety Authority badge" width="92" height="77">
+          <div>
+            <p class="mono">ECRA/ESA Licensed</p>
+            <p class="credential-id">ECRA #7018055, Ontario</p>
+            <p class="credential-sub">Led by Matt Allen, Master Electrician</p>
+          </div>
+        </div>
+        <div class="hero-scroll mono" aria-hidden="true"><span class="line"></span>Scroll</div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- Beat 2: Why should I care? -->
+<section class="section manifesto" aria-labelledby="manifesto-label">
+  <div class="manifesto-ring" aria-hidden="true"></div>
+  <div class="wrap grid-12">
+    <p id="manifesto-label" class="label slide"><span class="dot" aria-hidden="true"></span>The standard</p>
+    <p class="manifesto-text" data-manifesto>In a well-built home, the electrical work disappears. Keypads sit where the designer drew them. Light falls where the architect intended. Behind the walls, every circuit is <span class="accent">licensed, labelled and inspected.</span></p>
+    <div class="manifesto-foot reveal">
+      <p>HausPower plans the power, lighting and control systems for high-end homes, then installs them with the care the rest of the house received. Matt Allen, a licensed master electrician, leads every project.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Beat 3: How does it work? -->
+<section class="section pt-0" aria-labelledby="disc-title">
+  <div class="wrap">
+    <hr class="hairline" style="margin-bottom: clamp(64px, 9vw, 130px)">
+    <div class="disciplines-head">
+      <h2 id="disc-title" class="display-2 reveal">Six disciplines. One licensed team.</h2>
+      <p class="reveal">From the service entrance to the last keypad, one crew owns the system. Fewer trades on site, fewer gaps between them.</p>
+    </div>
+    <div class="disciplines">
+      <div class="disc-media" aria-hidden="true">
+        <img data-disc-img="1" class="is-active" src="/images/electrician-wiring.jpg" alt="" loading="lazy" decoding="async" width="1920" height="1280" style="object-position: 45% 40%">
+        <img data-disc-img="2" src="/images/touch-panel.jpg" alt="" loading="lazy" decoding="async" width="1600" height="1122" style="object-position: 40% 50%">
+        <img data-disc-img="3" src="/images/pool-night.jpg" alt="" loading="lazy" decoding="async" width="1920" height="1280" style="object-position: 35% 50%">
+        <img data-disc-img="4" src="/images/panel-breakers.jpg" alt="" loading="lazy" decoding="async" width="1600" height="996" style="object-position: 50% 40%">
+        <img data-disc-img="5" src="/images/panel-upgrade.jpg" alt="" loading="lazy" decoding="async" width="1600" height="1064" style="object-position: 30% 50%">
+        <img data-disc-img="6" src="/images/security-camera.jpg" alt="" loading="lazy" decoding="async" width="1920" height="1280" style="object-position: 60% 40%">
+        <p class="disc-caption mono" data-disc-caption>Custom homes and renovations</p>
+      </div>
+      <ol class="disc-list">
+        <li class="disc-row is-active" data-disc="1">
+          <div class="disc-thumb"><img src="/images/electrician-wiring.jpg" alt="Electrician running new wiring in a home under construction" loading="lazy" decoding="async" width="1920" height="1280" style="object-position: 45% 40%"></div>
+          <span class="num">01</span>
+          <h3>Custom homes and renovations</h3>
+          <p>Full wiring for new construction and major renovations. Planned around the drawings, built for the loads the house will carry.</p>
+        </li>
+        <li class="disc-row" data-disc="2">
+          <div class="disc-thumb"><img src="/images/touch-panel.jpg" alt="Hand using a smart home touch panel set into a kitchen backsplash" loading="lazy" decoding="async" width="1600" height="1122" style="object-position: 40% 50%"></div>
+          <span class="num">02</span>
+          <h3>Smart home integration</h3>
+          <p>Lighting, climate, shades and entertainment on one clear interface. Wired properly first, so the smart layer stays reliable.</p>
+        </li>
+        <li class="disc-row" data-disc="3">
+          <div class="disc-thumb"><img src="/images/pool-night.jpg" alt="Pool terrace and living space lit at night" loading="lazy" decoding="async" width="1920" height="1280" style="object-position: 35% 50%"></div>
+          <span class="num">03</span>
+          <h3>Lighting control</h3>
+          <p>Scenes, dimming and landscape lighting that let the architecture read after dark. Keypads labelled in plain words.</p>
+        </li>
+        <li class="disc-row" data-disc="4">
+          <div class="disc-thumb"><img src="/images/panel-breakers.jpg" alt="Organized breaker panel with colour-coded wiring" loading="lazy" decoding="async" width="1600" height="996" style="object-position: 50% 40%"></div>
+          <span class="num">04</span>
+          <h3>Panel upgrades</h3>
+          <p>Service and panel upgrades sized for today's loads and the ones you are planning. Clean, labelled, inspected.</p>
+        </li>
+        <li class="disc-row" data-disc="5">
+          <div class="disc-thumb"><img src="/images/panel-upgrade.jpg" alt="Electrician testing a residential electrical panel" loading="lazy" decoding="async" width="1600" height="1064" style="object-position: 30% 50%"></div>
+          <span class="num">05</span>
+          <h3>Generator installations</h3>
+          <p>Standby power for homes that cannot go dark. Installed, connected and tested before we hand it over.</p>
+        </li>
+        <li class="disc-row" data-disc="6">
+          <div class="disc-thumb"><img src="/images/security-camera.jpg" alt="Security camera and floodlights mounted on a home exterior" loading="lazy" decoding="async" width="1920" height="1280" style="object-position: 60% 40%"></div>
+          <span class="num">06</span>
+          <h3>Security systems</h3>
+          <p>Cameras, lighting and access tied into the rest of the home. Discreet placement, dependable power.</p>
+        </li>
+      </ol>
+    </div>
+    <p class="disciplines-foot reveal"><a class="text-link" href="/services">See the services in detail <span aria-hidden="true">&rarr;</span></a></p>
+  </div>
+</section>
+
+<section class="section process" aria-labelledby="process-title">
+  <div class="wrap process-grid">
+    <div class="process-intro">
+      <p class="label slide"><span class="dot" aria-hidden="true"></span>How a project runs</p>
+      <h2 id="process-title" class="display-2 reveal">Four steps. No surprises.</h2>
+      <p class="lede reveal">You always know who is on site, what happens next, and what the inspector will see.</p>
+    </div>
+    <ol class="process-stack">
+      <li class="step">
+        <span class="step-num">01</span>
+        <div class="step-body">
+          <h3 class="display-3">Consult</h3>
+          <p>A call or site visit with Matt. We walk the drawings or the house, talk through how you live, and agree on scope.</p>
+          <p class="step-tag mono"><span class="dot" aria-hidden="true"></span>Direct with the master electrician</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-num">02</span>
+        <div class="step-body">
+          <h3 class="display-3">Plan and quote</h3>
+          <p>Fixture, keypad and device locations are coordinated with your designer or builder. You get a detailed written estimate.</p>
+          <p class="step-tag mono"><span class="dot" aria-hidden="true"></span>Clear scope before work starts</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-num">03</span>
+        <div class="step-body">
+          <h3 class="display-3">Install and inspect</h3>
+          <p>The ESA notification is filed before work begins. Rough-in and final stages are inspected by the Electrical Safety Authority.</p>
+          <p class="step-tag mono"><span class="dot" aria-hidden="true"></span>ESA notified and inspected</p>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-num">04</span>
+        <div class="step-body">
+          <h3 class="display-3">Commission and hand over</h3>
+          <p>Scenes are set, systems are tested, and you are walked through every control. Questions after move-in go straight to us.</p>
+          <p class="step-tag mono"><span class="dot" aria-hidden="true"></span>Support after completion</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- Beat 4: Who else trusts you? -->
+<section class="section on-bone partners" aria-labelledby="partners-title">
+  <div class="wrap partners-grid">
+    <div class="partners-copy">
+      <p class="label slide"><span class="dot" aria-hidden="true"></span>For designers and builders</p>
+      <h2 id="partners-title" class="display-2 reveal">The electrician your drawings deserve.</h2>
+      <div class="body-copy reveal">
+        <p>HausPower works alongside architects, interior designers and general contractors. We read the lighting plan closely, flag conflicts early, and keep the schedule you set.</p>
+      </div>
+      <ul class="partner-points" data-stagger>
+        <li><span class="mono">01</span>Device layouts coordinated before rough-in</li>
+        <li><span class="mono">02</span>Clear updates to the whole project team</li>
+        <li><span class="mono">03</span>Licensed, insured and ESA-notified work</li>
+      </ul>
+    </div>
+    <div class="partners-media">
+      <div class="frame img-reveal"><img src="/images/kitchen-lighting.jpg" alt="Modern kitchen with pendant lighting over a large island" loading="lazy" decoding="async" width="1920" height="1282"></div>
+      <div class="inset"><img src="/images/bedroom-keypad.jpg" alt="Smart lighting keypad mounted beside a bedroom doorway" loading="lazy" decoding="async" width="1920" height="1281" style="width:100%;height:100%;object-fit:cover;object-position:62% 50%"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section voices" aria-labelledby="voices-title">
+  <div class="wrap">
+    <div class="voices-head">
+      <div>
+        <p class="label slide"><span class="dot" aria-hidden="true"></span>Client feedback</p>
+        <h2 id="voices-title" class="display-2 reveal">Trusted by homeowners and the trade.</h2>
+      </div>
+      <p class="mono reveal"><span class="stars" aria-label="Five out of five stars">{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }}</span><br>Four reviews. Four five-star ratings.</p>
+    </div>
+    <div class="voices-track">
+      <figure class="voice">
+        <div><span class="stars" aria-hidden="true">{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }}</span>
+        <blockquote>"Flawless electrical work on our custom home. Their attention to detail made the entire process smooth and worry-free."</blockquote></div>
+        <figcaption><span class="avatar" aria-hidden="true">SM</span><span><span class="who">Sarah M.</span><br><span class="role">Homeowner, Kitchener</span></span></figcaption>
+      </figure>
+      <figure class="voice">
+        <div><span class="stars" aria-hidden="true">{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }}</span>
+        <blockquote>"Their expertise in integrating smart technology with traditional electrical systems exceeded our expectations. They finished on schedule."</blockquote></div>
+        <figcaption><span class="avatar" aria-hidden="true">DL</span><span><span class="who">David L.</span><br><span class="role">Architect, Toronto</span></span></figcaption>
+      </figure>
+      <figure class="voice">
+        <div><span class="stars" aria-hidden="true">{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }}</span>
+        <blockquote>"From panel upgrades to lighting design, HausPower's craftsmanship stands out. Their commitment to safety gave us confidence throughout our renovation."</blockquote></div>
+        <figcaption><span class="avatar" aria-hidden="true">ER</span><span><span class="who">Emily R.</span><br><span class="role">Interior Designer, Muskoka</span></span></figcaption>
+      </figure>
+      <figure class="voice">
+        <div><span class="stars" aria-hidden="true">{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }}{{ star | safe }}</span>
+        <blockquote>"Reliable, skilled and professional. HausPower is our go-to electrical partner for all luxury projects."</blockquote></div>
+        <figcaption><span class="avatar" aria-hidden="true">MT</span><span><span class="who">Mark T.</span><br><span class="role">General Contractor, Kitchener-Waterloo</span></span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section safety-teaser pt-0" aria-labelledby="safety-title">
+  <div class="wrap">
+    <hr class="hairline" style="margin-bottom: clamp(64px, 9vw, 130px)">
+    <div class="grid-12">
+      <div class="safety-badge reveal">
+        <img src="/images/ecra-esa-badge.png" alt="Electrical Contractor Registration Agency of the Electrical Safety Authority" width="240" height="200" loading="lazy">
+        <p class="mono">Licensed Electrical Contractor</p>
+        <p class="credential-id">ECRA #7018055, Ontario</p>
+      </div>
+      <div class="safety-copy">
+        <p class="label slide"><span class="dot" aria-hidden="true"></span>Safety and standards</p>
+        <h2 id="safety-title" class="display-2 reveal">Licensed. Notified. Inspected.</h2>
+        <p class="body-copy reveal">In Ontario, anyone you hire for electrical work in your home must be a Licensed Electrical Contractor. HausPower is licensed through ECRA/ESA, and every project follows the ESA notification and inspection process.</p>
+        <div class="fact-list" data-stagger>
+          <div class="fact"><h3>Master electrician led</h3><p>Matt Allen, licensed master electrician, leads every project.</p></div>
+          <div class="fact"><h3>ESA inspected</h3><p>Work is notified before it starts and inspected at key stages.</p></div>
+          <div class="fact"><h3>Protected sites</h3><p>Risk assessments, lockout-tagout and PPE on every job.</p></div>
+        </div>
+        <p class="reveal mt-9" ><a class="text-link" href="/safety-standards">How we work safely <span aria-hidden="true">&rarr;</span></a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Beat 5: What do I do now? -->
+{% include "cta.njk" %}

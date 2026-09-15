@@ -1,0 +1,3 @@
+/* Tailwind v3 utilities only, compiled at build time to _site/css/tw.css.
+   Brand design system lives in plain CSS: src/css/style.css (:root tokens). */
+@tailwind utilities;

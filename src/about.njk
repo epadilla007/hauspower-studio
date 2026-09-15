@@ -1,0 +1,92 @@
+---
+layout: base.njk
+permalink: /about.html
+canonicalPath: /about
+title: "About Matt Allen, Licensed Master Electrician | HausPower"
+ogTitle: "About | HausPower"
+description: "Meet Matt Allen, licensed master electrician and founder of HausPower (formerly SmartHaus). Luxury residential electrical and smart home work across Kitchener-Waterloo, Toronto, the GTA and Muskoka."
+bodyClass: page-about
+pageSchema: '{"@context":"https://schema.org","@type":"AboutPage","name":"About HausPower","url":"https://hauspower.ca/about","mainEntity":{"@type":"Person","name":"Matt Allen","jobTitle":"Licensed Master Electrician, Founder","worksFor":{"@id":"https://hauspower.ca/#business"},"image":"https://hauspower.ca/images/matt-allen.png"}}'
+---
+<section class="about-hero" aria-labelledby="page-title">
+  <div class="wrap about-grid">
+    <div class="about-copy" data-intro>
+      <p class="label"><span class="dot" aria-hidden="true"></span>About HausPower</p>
+      <h1 id="page-title" class="display-1">Matt Allen. Master electrician.</h1>
+      <p class="lede">Founder of HausPower and the licensed master electrician who leads every project.</p>
+      <div class="btn-row mt-8" >
+        <a class="btn btn-primary" href="/request-a-quote">Request a quote <span class="arrow" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn-ghost" href="tel:{{ site.phoneHref }}">Talk to Matt</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <div class="portrait-frame">
+        <picture>
+          <source srcset="/images/matt-allen.webp" type="image/webp">
+          <img src="/images/matt-allen.png" alt="Portrait of Matt Allen, founder of HausPower" width="640" height="487" fetchpriority="high">
+        </picture>
+      </div>
+      <div class="credential">
+        <img src="/images/ecra-esa-badge.png" alt="ECRA of the Electrical Safety Authority badge" width="92" height="77">
+        <div>
+          <p class="mono">ECRA/ESA Licensed</p>
+          <p class="credential-id">ECRA #7018055, Ontario</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="story-title" style="border-top: 1px solid var(--line)">
+  <div class="wrap split">
+    <div class="a">
+      <p class="label slide"><span class="dot" aria-hidden="true"></span>The story</p>
+      <h2 id="story-title" class="story reveal">HausPower began as SmartHaus. Today the work spans licensed electrical systems and the smart technology built on top of them.</h2>
+    </div>
+    <div class="b body-copy reveal">
+      <p>HausPower serves homes where the finish matters as much as the function: custom builds, careful renovations, and owners who expect the electrical work to match the rest of the house.</p>
+      <p>Today HausPower partners with homeowners, architects, interior designers and builders across Kitchener-Waterloo, Toronto and the GTA, and Muskoka. Follow recent work on Instagram at <a class="link link-ivory" href="{{ site.instagram }}" target="_blank" rel="noopener">{{ site.instagramHandle }}</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section-tight" aria-label="Project photo">
+  <div class="wrap">
+    <div class="wide-img img-scale"><img src="/images/commissioning.jpg" alt="Technician commissioning a smart switch beside a curved staircase" loading="lazy" decoding="async" width="1600" height="1066" style="object-position: 60% 45%"></div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="values-title">
+  <div class="wrap">
+    <div class="disciplines-head">
+      <h2 id="values-title" class="display-2 reveal">How Matt runs a job.</h2>
+      <p class="reveal">Three commitments that show up in every review.</p>
+    </div>
+    <div class="card-grid cols-3" data-stagger>
+      <div class="card"><span class="mono">01 / Precision</span><h3 class="h-card">Detail you can see and detail you cannot.</h3><p>Devices placed to the drawing. Panels labelled so the next person can read them.</p></div>
+      <div class="card"><span class="mono">02 / Communication</span><h3 class="h-card">You always know what happens next.</h3><p>Clear schedules up front and updates for your whole project team. Punctual, respectful of your home.</p></div>
+      <div class="card"><span class="mono">03 / Safety</span><h3 class="h-card">Licensed and inspected, every time.</h3><p>ESA notification, staged inspections and strict site protocols on every project.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section process" aria-labelledby="area-title">
+  <div class="wrap split">
+    <div class="a">
+      <p class="label slide"><span class="dot" aria-hidden="true"></span>Service area</p>
+      <h2 id="area-title" class="display-2 reveal">Based in Kitchener-Waterloo. Working across Ontario.</h2>
+    </div>
+    <div class="b reveal">
+      <p class="body-copy">From urban custom homes to lakeside cottages, HausPower takes on projects where quality and safety are not negotiable.</p>
+      <ul class="areas">
+        <li class="pill">Kitchener-Waterloo</li>
+        <li class="pill">Toronto</li>
+        <li class="pill">Greater Toronto Area</li>
+        <li class="pill">Muskoka</li>
+        <li class="pill">Across Ontario</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% include "cta.njk" %}

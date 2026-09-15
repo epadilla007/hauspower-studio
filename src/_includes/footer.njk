@@ -1,0 +1,45 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="/images/HORIZONTAL-LIGHT-LOGO.svg" alt="HausPower" width="180" height="40" loading="lazy">
+        <p>Licensed electrical and smart home work for Ontario's finest homes.</p>
+        <div class="credential credential-footer">
+          <img src="/images/ecra-esa-badge.png" alt="Electrical Contractor Registration Agency of the Electrical Safety Authority badge" width="96" height="80" loading="lazy">
+          <div>
+            <p class="mono">Licensed Electrical Contractor</p>
+            <p class="credential-id">{{ site.licence }}</p>
+          </div>
+        </div>
+      </div>
+      <nav class="footer-col" aria-label="Footer">
+        <p class="label">Pages</p>
+        <ul>
+          <li><a class="link" href="/">Home</a></li>
+          <li><a class="link" href="/services">Services</a></li>
+          <li><a class="link" href="/safety-standards">Safety &amp; Standards</a></li>
+          <li><a class="link" href="/about">About Matt</a></li>
+          <li><a class="link" href="/request-a-quote">Request a quote</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <p class="label">Contact</p>
+        <ul>
+          <li><a class="link" href="tel:{{ site.phoneHref }}">{{ site.phone }}</a></li>
+          <li><a class="link" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><a class="link" href="{{ site.instagram }}" rel="noopener" target="_blank">Instagram {{ site.instagramHandle }}</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="label">Service area</p>
+        <ul class="plain">
+          {% for a in site.areas %}<li>{{ a }}</li>{% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>{{ "" | year }}</span> HausPower. All rights reserved.</p>
+      <p class="mono">Based in {{ site.city }}, Ontario</p>
+    </div>
+  </div>
+</footer>

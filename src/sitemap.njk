@@ -1,0 +1,15 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- set pages = [["/", "1.0"], ["/services", "0.9"], ["/request-a-quote", "0.9"], ["/safety-standards", "0.7"], ["/about", "0.7"]] %}
+{%- for p in pages %}
+  <url>
+    <loc>{{ site.url }}{{ p[0] }}</loc>
+    <lastmod>{{ page.date.toISOString().slice(0, 10) }}</lastmod>
+    <priority>{{ p[1] }}</priority>
+  </url>
+{%- endfor %}
+</urlset>

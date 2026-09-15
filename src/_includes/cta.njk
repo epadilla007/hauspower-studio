@@ -1,0 +1,14 @@
+<section class="cta-band" aria-labelledby="cta-title">
+  <div class="cta-media">
+    <img src="/images/entrance-night.jpg" alt="Modern home entrance lit at night" loading="lazy" decoding="async" width="1600" height="1067" style="object-position: 50% 60%">
+  </div>
+  <div class="wrap cta-inner">
+    <p class="label reveal"><span class="dot" aria-hidden="true"></span>Start a project</p>
+    <h2 id="cta-title" class="display-2 reveal">{{ ctaTitle or "Tell us about the house." }}</h2>
+    <p class="lede reveal">{{ ctaText or "Plans, a renovation, or a panel that needs attention. Send the details and Matt will reply personally." }}</p>
+    <div class="btn-row reveal">
+      <a class="btn btn-primary" href="/request-a-quote">Request a quote <span class="arrow" aria-hidden="true">&rarr;</span></a>
+      <a class="btn btn-ghost" href="tel:{{ site.phoneHref }}">Talk to Matt, {{ site.phone }}</a>
+    </div>
+  </div>
+</section>

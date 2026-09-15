@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  {%- set canon = site.url + (canonicalPath or "/") %}
+  <link rel="canonical" href="{{ canon }}">
+  <meta name="theme-color" content="#0B0D0F">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HausPower">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:title" content="{{ ogTitle or title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ canon }}">
+  <meta property="og:image" content="{{ site.url }}/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ ogTitle or title }}">
+  <meta name="twitter:description" content="{{ description }}">
+  <meta name="twitter:image" content="{{ site.url }}/images/og-image.jpg">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <script>
+    (function(d){
+      var r = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (r) return;
+      d.classList.add('js');
+      /* Failsafe: if GSAP never loads, reveal everything. */
+      setTimeout(function(){ if (!window.__hpAnim) d.classList.remove('js'); }, 3500);
+    })(document.documentElement);
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=Outfit:wght@300;400;500&display=swap">
+  {% if preloadImage %}<link rel="preload" as="image" href="{{ preloadImage }}"{% if preloadImageMobile %} imagesrcset="{{ preloadImageMobile }} 900w, {{ preloadImage }} 1920w" imagesizes="100vw"{% endif %} fetchpriority="high">{% endif %}
+  <link rel="stylesheet" href="/css/tw.css?v={{ site.cssVersion }}">
+  <link rel="stylesheet" href="/css/style.css?v={{ site.cssVersion }}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["Electrician", "LocalBusiness"],
+    "@id": "{{ site.url }}/#business",
+    "name": "HausPower",
+    "alternateName": "SmartHaus",
+    "description": "Licensed electrical contractor for luxury homes in Ontario. Custom home electrical, smart home integration, lighting control, panel upgrades, generators and security systems.",
+    "url": "{{ site.url }}/",
+    "telephone": "+1-519-635-2078",
+    "email": "{{ site.email }}",
+    "image": "{{ site.url }}/images/og-image.jpg",
+    "logo": "{{ site.url }}/images/HAUSPOWER-LOGO.svg",
+    "priceRange": "$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kitchener",
+      "addressRegion": "ON",
+      "addressCountry": "CA"
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Kitchener"},
+      {"@type": "City", "name": "Waterloo"},
+      {"@type": "City", "name": "Toronto"},
+      {"@type": "AdministrativeArea", "name": "Greater Toronto Area"},
+      {"@type": "AdministrativeArea", "name": "Muskoka"},
+      {"@type": "State", "name": "Ontario"}
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "Matt Allen",
+      "jobTitle": "Licensed Master Electrician, Founder"
+    },
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "credentialCategory": "Licensed Electrical Contractor",
+      "identifier": "ECRA 7018055",
+      "recognizedBy": {"@type": "Organization", "name": "Electrical Safety Authority (ESA)", "url": "https://esasafe.com/"}
+    },
+    "sameAs": ["{{ site.instagram }}"]
+  }
+  </script>
+  {% if pageSchema %}<script type="application/ld+json">{{ pageSchema | safe }}</script>{% endif %}
+</head>
+<body class="{{ bodyClass }}">
+  <a class="skip-link" href="#main">Skip to content</a>
+  {% include "nav.njk" %}
+  <main id="main">
+    {{ content | safe }}
+  </main>
+  {% include "footer.njk" %}
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+  <script src="/js/main.js?v={{ site.cssVersion }}" defer></script>
+  {% if pageScript %}<script src="/js/{{ pageScript }}?v={{ site.cssVersion }}" defer></script>{% endif %}
+</body>
+</html>

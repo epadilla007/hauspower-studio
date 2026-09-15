@@ -1,0 +1,62 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": "_site",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/our-services", "destination": "/services", "statusCode": 301 },
+    { "source": "/our-services/", "destination": "/services", "statusCode": 301 },
+    { "source": "/services/", "destination": "/services", "statusCode": 301 },
+    { "source": "/safety-standards/", "destination": "/safety-standards", "statusCode": 301 },
+    { "source": "/request-a-quote/", "destination": "/request-a-quote", "statusCode": 301 },
+    { "source": "/about/", "destination": "/about", "statusCode": 301 },
+    { "source": "/about-us", "destination": "/about", "statusCode": 301 },
+    { "source": "/about-us/", "destination": "/about", "statusCode": 301 },
+    { "source": "/contact", "destination": "/request-a-quote", "statusCode": 301 },
+    { "source": "/contact/", "destination": "/request-a-quote", "statusCode": 301 },
+    { "source": "/contact-us", "destination": "/request-a-quote", "statusCode": 301 },
+    { "source": "/contact-us/", "destination": "/request-a-quote", "statusCode": 301 },
+    { "source": "/home", "destination": "/", "statusCode": 301 },
+    { "source": "/home/", "destination": "/", "statusCode": 301 },
+    { "source": "/project-gallery", "destination": "/services", "statusCode": 301 },
+    { "source": "/project-gallery/", "destination": "/services", "statusCode": 301 },
+    { "source": "/your-waste", "destination": "/", "statusCode": 301 },
+    { "source": "/your-waste/", "destination": "/", "statusCode": 301 },
+    { "source": "/waste-detailed", "destination": "/", "statusCode": 301 },
+    { "source": "/waste-detailed/", "destination": "/", "statusCode": 301 },
+    { "source": "/to-delete", "destination": "/request-a-quote", "statusCode": 301 },
+    { "source": "/to-delete/", "destination": "/request-a-quote", "statusCode": 301 }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "Permissions-Policy", "value": "camera=(), microphone=(), geolocation=(), interest-cohort=()" },
+        { "key": "Content-Security-Policy", "value": "default-src 'self'; img-src 'self' data: blob: https:; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://api.web3forms.com; form-action 'self' https://api.web3forms.com mailto:; frame-ancestors 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "(?<sub>.*)\\.vercel\\.app" }],
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+    },
+    {
+      "source": "/images/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000, stale-while-revalidate=604800" }]
+    },
+    {
+      "source": "/(css|js)/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800, stale-while-revalidate=86400" }]
+    },
+    {
+      "source": "/(favicon\\.svg|favicon-32\\.png|apple-touch-icon\\.png)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=2592000, immutable" }]
+    }
+  ]
+}

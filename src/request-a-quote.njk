@@ -1,0 +1,99 @@
+---
+layout: base.njk
+permalink: /request-a-quote.html
+canonicalPath: /request-a-quote
+title: "Request a Quote | Luxury Home Electrician, HausPower"
+ogTitle: "Request a Quote | HausPower"
+description: "Request a tailored quote for residential electrical work and smart home systems in Kitchener-Waterloo, Toronto, the GTA and Muskoka. Call (519) 635-2078."
+bodyClass: page-quote
+pageScript: quote.js
+pageSchema: '{"@context":"https://schema.org","@type":"ContactPage","name":"Request a Quote","url":"https://hauspower.ca/request-a-quote","mainEntity":{"@id":"https://hauspower.ca/#business"}}'
+---
+<section class="page-hero" aria-labelledby="page-title" style="padding-bottom: clamp(40px, 5vw, 64px)">
+  <div class="wrap" data-intro>
+    <p class="label"><span class="dot" aria-hidden="true"></span>Request a quote</p>
+    <h1 id="page-title" class="display-1">Tell us about the house.</h1>
+    <p class="lede">A precise estimate starts with a few details. Matt reviews every request personally.</p>
+  </div>
+</section>
+
+<section class="section" aria-label="Quote request" style="padding-top: clamp(24px, 4vw, 48px)">
+  <div class="wrap quote-grid">
+    <aside class="quote-side">
+      <p class="label"><span class="dot" aria-hidden="true"></span>Prefer to talk?</p>
+      <ul class="contact-lines">
+        <li><span class="mono">Phone</span><a class="link" href="tel:{{ site.phoneHref }}">{{ site.phone }}</a></li>
+        <li><span class="mono">Email</span><a class="link" href="mailto:{{ site.email }}?subject=Quote%20request">{{ site.email }}</a></li>
+        <li><span class="mono">Service area</span><span style="color: var(--ivory)">Kitchener-Waterloo, Toronto and the GTA, Muskoka</span></li>
+      </ul>
+      <div class="credential mt-8" >
+        <img src="/images/ecra-esa-badge.png" alt="ECRA of the Electrical Safety Authority badge" width="92" height="77" loading="lazy">
+        <div>
+          <p class="mono">Licensed Electrical Contractor</p>
+          <p class="credential-id">ECRA #7018055, Ontario</p>
+        </div>
+      </div>
+      <ol class="timeline mt-10" >
+        <li><h3>1. Send the details</h3><p>Plans, photos or a short description are all fine.</p></li>
+        <li><h3>2. Talk it through</h3><p>Matt follows up to discuss scope, timing and any site visit.</p></li>
+        <li><h3>3. Get your estimate</h3><p>A tailored estimate that reflects scope, materials and timeline. No hidden costs.</p></li>
+      </ol>
+    </aside>
+
+    <div class="quote-form-wrap">
+      <h2 class="display-3 mb-2" >Project details</h2>
+      <p class="mb-7">Fields marked <span class="req">*</span> are required.</p>
+      <!--
+        WEB3FORMS SETUP (placeholder): replace YOUR_WEB3FORMS_ACCESS_KEY in src/_data/site.json
+        with the access key from https://web3forms.com (sent to hello@hauspower.ca).
+        Until then, the form opens a pre-filled email to hello@hauspower.ca so no request is lost.
+      -->
+      <form id="quote-form" action="https://api.web3forms.com/submit" method="POST" novalidate data-key="{{ site.web3formsKey }}">
+        <input type="hidden" name="access_key" value="{{ site.web3formsKey }}">
+        <input type="hidden" name="subject" value="New quote request from hauspower.ca">
+        <input type="hidden" name="from_name" value="HausPower website">
+        <div class="hp-field" aria-hidden="true"><label for="botcheck">Leave this empty</label><input type="checkbox" name="botcheck" id="botcheck" tabindex="-1"></div>
+        <div class="form-grid">
+          <div class="field"><label for="first_name">First name <span class="req">*</span></label><input id="first_name" name="first_name" type="text" autocomplete="given-name" required placeholder=" "></div>
+          <div class="field"><label for="last_name">Last name <span class="req">*</span></label><input id="last_name" name="last_name" type="text" autocomplete="family-name" required placeholder=" "></div>
+          <div class="field"><label for="email">Email <span class="req">*</span></label><input id="email" name="email" type="email" autocomplete="email" required placeholder=" "></div>
+          <div class="field"><label for="phone">Phone <span class="req">*</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder=" "></div>
+          <div class="field full"><label for="address">Project address or city <span class="req">*</span></label><input id="address" name="address" type="text" autocomplete="street-address" required placeholder=" "></div>
+          <div class="field"><label for="role">I am a</label>
+            <select id="role" name="role">
+              <option>Homeowner</option><option>Interior designer</option><option>Architect</option><option>Builder or general contractor</option><option>Other</option>
+            </select></div>
+          <div class="field"><label for="project_type">Project type</label>
+            <select id="project_type" name="project_type">
+              <option>New custom home</option><option>Renovation or addition</option><option>Smart home integration</option><option>Lighting control</option><option>Panel upgrade</option><option>Generator installation</option><option>Security system</option><option>Something else</option>
+            </select></div>
+          <div class="field full"><label for="timeline">Timing</label>
+            <select id="timeline" name="timeline">
+              <option>As soon as possible</option><option>Within 3 months</option><option>3 to 6 months</option><option>6 months or more</option><option>Still planning</option>
+            </select></div>
+          <div class="field full"><label for="message">Tell us about the project</label><textarea id="message" name="message" placeholder="Scope, drawings available, designer or builder involved, anything we should know."></textarea></div>
+        </div>
+        <div class="btn-row mt-7" >
+          <button class="btn btn-primary" type="submit">Send request <span class="arrow" aria-hidden="true">&rarr;</span></button>
+          <a class="btn btn-ghost" href="tel:{{ site.phoneHref }}">Or call {{ site.phone }}</a>
+        </div>
+        <p class="form-note">Your details are used only to respond to this request.</p>
+        <div class="form-status" role="status" aria-live="polite" data-status></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section process" aria-labelledby="qfaq-title">
+  <div class="wrap faq-grid">
+    <div class="faq-intro">
+      <p class="label slide"><span class="dot" aria-hidden="true"></span>Questions</p>
+      <h2 id="qfaq-title" class="display-2 reveal">Before you send.</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item"><summary>How does the quote process work?<span class="plus" aria-hidden="true"></span></summary><div class="answer"><p>After we discuss your project, you receive a tailored estimate that reflects the scope, materials and timeline. It is transparent, with no hidden costs.</p></div></details>
+      <details class="faq-item"><summary>What types of projects do you take on?<span class="plus" aria-hidden="true"></span></summary><div class="answer"><p>Custom home wiring, major renovations, panel upgrades, generator installations and smart technology integration. <a class="link link-ivory" href="/services">See all services</a>.</p></div></details>
+      <details class="faq-item"><summary>What safety measures do you follow?<span class="plus" aria-hidden="true"></span></summary><div class="answer"><p>Our work complies with the Ontario Electrical Safety Code and is notified to ESA. We rely on thorough inspections, quality materials and professional installation. <a class="link link-ivory" href="/safety-standards">Read our standards</a>.</p></div></details>
+    </div>
+  </div>
+</section>
