@@ -1,28 +1,27 @@
 # HausPower
 
-> HausPower (formerly SmartHaus) is an ECRA/ESA Licensed Electrical Contractor in Ontario, Canada (ECRA #7018055), led by licensed master electrician Matt Allen. It provides electrical and smart home work for luxury residences, custom builds and renovations in Kitchener-Waterloo, Toronto and the GTA, and Muskoka.
+> HausPower (formerly SmartHaus) is an ECRA/ESA Licensed Electrical Contractor in Ontario, Canada (ECRA #7018055), led by licensed master electrician Matt Allen. It provides residential and commercial electrical work in Toronto, Mississauga, Oakville, Kitchener and Waterloo. Smart home technology is delivered through partners.
 
 - Phone: (519) 635-2078
 - Email: hello@hauspower.ca
 - Base: Kitchener-Waterloo, Ontario
-- Instagram: https://www.instagram.com/smarthaus.ca/
+- Instagram: https://www.instagram.com/hauspower.ca/
 
 ## Pages
 
 - [Home](https://hauspower.ca/): overview, disciplines, process, client reviews
-- [Services](https://hauspower.ca/services): custom homes and renovations, smart home integration, lighting control, panel upgrades, generator installations, security systems, FAQ
+- [Services](https://hauspower.ca/services): renovations and custom homes, panel changes, generators, lighting controls, shades, commercial electrical, FAQ
 - [Safety & Standards](https://hauspower.ca/safety-standards): ECRA/ESA licensing, the ESA notification and inspection process, eight site safety protocols
 - [About](https://hauspower.ca/about): Matt Allen, company background, service area
 - [Request a Quote](https://hauspower.ca/request-a-quote): quote form, phone and email
 
 ## Services
 
-- Custom home and new construction wiring
-- Renovation upgrades
-- Smart home integration and home automation
-- Lighting control, interior and landscape
-- Panel and service upgrades
+- Renovations, additions and custom home wiring
+- Panel and service changes
 - Generator installations
-- Security systems
+- Lighting controls, interior and exterior
+- Motorized shade wiring
+- Commercial electrical
+- Smart home, security and AV through technology partners
 - Collaboration with architects, interior designers and builders
-- Boutique commercial projects

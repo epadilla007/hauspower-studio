@@ -10,12 +10,13 @@
   "city": "Kitchener-Waterloo",
   "region": "ON",
   "areas": [
-    "Kitchener-Waterloo",
-    "Toronto and the GTA",
-    "Muskoka",
-    "Ontario"
+    "Toronto",
+    "Mississauga",
+    "Oakville",
+    "Kitchener",
+    "Waterloo"
   ],
-  "instagram": "https://www.instagram.com/smarthaus.ca/",
-  "instagramHandle": "@smarthaus.ca",
+  "instagram": "https://www.instagram.com/hauspower.ca/",
+  "instagramHandle": "@hauspower.ca",
   "web3formsKey": "YOUR_WEB3FORMS_ACCESS_KEY"
 }

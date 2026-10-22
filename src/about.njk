@@ -4,7 +4,7 @@ permalink: /about.html
 canonicalPath: /about
 title: "About Matt Allen, Licensed Master Electrician | HausPower"
 ogTitle: "About | HausPower"
-description: "Meet Matt Allen, licensed master electrician and founder of HausPower (formerly SmartHaus). Luxury residential electrical and smart home work across Kitchener-Waterloo, Toronto, the GTA and Muskoka."
+description: "Meet Matt Allen, licensed master electrician and founder of HausPower (formerly SmartHaus). Residential and commercial electrical work across Toronto, Mississauga, Oakville, Kitchener and Waterloo."
 bodyClass: page-about
 pageSchema: '{"@context":"https://schema.org","@type":"AboutPage","name":"About HausPower","url":"https://hauspower.ca/about","mainEntity":{"@type":"Person","name":"Matt Allen","jobTitle":"Licensed Master Electrician, Founder","worksFor":{"@id":"https://hauspower.ca/#business"},"image":"https://hauspower.ca/images/matt-allen.png"}}'
 ---
@@ -41,11 +41,11 @@ pageSchema: '{"@context":"https://schema.org","@type":"AboutPage","name":"About 
   <div class="wrap split">
     <div class="a">
       <p class="label slide"><span class="dot" aria-hidden="true"></span>The story</p>
-      <h2 id="story-title" class="story reveal">HausPower began as SmartHaus. Today the work spans licensed electrical systems and the smart technology built on top of them.</h2>
+      <h2 id="story-title" class="story reveal">HausPower began as SmartHaus. Today it is an electrical contractor first, with smart technology delivered through trusted partners.</h2>
     </div>
     <div class="b body-copy reveal">
-      <p>HausPower serves homes where the finish matters as much as the function: custom builds, careful renovations, and owners who expect the electrical work to match the rest of the house.</p>
-      <p>Today HausPower partners with homeowners, architects, interior designers and builders across Kitchener-Waterloo, Toronto and the GTA, and Muskoka. Follow recent work on Instagram at <a class="link link-ivory" href="{{ site.instagram }}" target="_blank" rel="noopener">{{ site.instagramHandle }}</a>.</p>
+      <p>Every project gets premium work, whatever its size. A panel change gets the same care as a full custom build. Most jobs are residential, and close to a third are commercial.</p>
+      <p>Today HausPower partners with homeowners, architects, interior designers and builders across Toronto, Mississauga, Oakville, Kitchener and Waterloo. Follow recent work on Instagram at <a class="link link-ivory" href="{{ site.instagram }}" target="_blank" rel="noopener">{{ site.instagramHandle }}</a>.</p>
     </div>
   </div>
 </section>
@@ -74,16 +74,12 @@ pageSchema: '{"@context":"https://schema.org","@type":"AboutPage","name":"About 
   <div class="wrap split">
     <div class="a">
       <p class="label slide"><span class="dot" aria-hidden="true"></span>Service area</p>
-      <h2 id="area-title" class="display-2 reveal">Based in Kitchener-Waterloo. Working across Ontario.</h2>
+      <h2 id="area-title" class="display-2 reveal">Toronto to Waterloo.</h2>
     </div>
     <div class="b reveal">
-      <p class="body-copy">From urban custom homes to lakeside cottages, HausPower takes on projects where quality and safety are not negotiable.</p>
+      <p class="body-copy">HausPower works across the corridor from Toronto to Kitchener-Waterloo, on homes and commercial spaces alike.</p>
       <ul class="areas">
-        <li class="pill">Kitchener-Waterloo</li>
-        <li class="pill">Toronto</li>
-        <li class="pill">Greater Toronto Area</li>
-        <li class="pill">Muskoka</li>
-        <li class="pill">Across Ontario</li>
+        {% for a in site.areas %}<li class="pill">{{ a }}</li>{% endfor %}
       </ul>
     </div>
   </div>
